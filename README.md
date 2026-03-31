@@ -8,6 +8,7 @@
 |---|---|
 | [cpp_hello](./cpp_hello) | C++ 基础入门示例，Hello World |
 | [cpp_json](./cpp_json) | 使用 nlohmann_json 库处理 JSON 数据 |
+| [cpp_leetcode](./cpp_leetcode) | LeetCode 刷题模板，常用数据结构和辅助函数已定义 |
 
 ## 目录结构
 
@@ -15,6 +16,7 @@
 cpp_study/
 ├── cpp_hello/      # C++ 基础示例
 ├── cpp_json/        # JSON 处理示例
+├── cpp_leetcode/    # LeetCode 刷题
 └── .gitignore
 ```
 
@@ -46,6 +48,23 @@ mkdir build && cd build
 cmake ..
 make
 ./main
+```
+
+### cpp_leetcode
+
+LeetCode 刷题环境，预先定义了常用数据结构和辅助函数：
+
+- `ListNode` — 链表节点
+- `TreeNode` — 二叉树节点
+- 输入输出加速（`ios::sync_with_stdio`）
+
+**编译运行：**
+```bash
+cd cpp_leetcode
+mkdir build && cd build
+cmake ..
+make
+./lc
 ```
 
 ## 后续计划
